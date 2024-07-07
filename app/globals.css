@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    transition: 0.1s ease-in-out;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.removescroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* .scrollBar::-webkit-scrollbar {
+    max-width: 2px;
+    /* Set the width of the scrollbar */
+/* } */
+
+
+/* .scrollBar::-webkit-scrollbar-thumb { */
+/* background-color: #3498db55; */
+/* Set the color of the thumb */
+/* border-radius: 12px; */
+/* Set the border radius of the thumb */
+/* } */
+
+/* .scrollBar::-webkit-scrollbar-track { */
+/* background-color: #ffffff; */
+/* Set the color of the track */
+/* } */
+
+.scrollBar{
+    scrollbar-width: small;
+}
+
+.scrollBar::-webkit-scrollbar {
+    width: 4px;
+
+}
+
+/* Track */
+.scrollBar::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* Handle */
+.scrollBar::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+.scrollBar::-webkit-scrollbar-thumb:hover {
+    background: #999;
+}
+
+@layer components {
+    .fotter_comp {
+        font-weight: theme("fontWeight.semibold");
+        color: theme("textColor.footerWhite");
+        opacity: theme("textOpacity.100");
+        cursor: theme("cursor.pointer");
+        font-size: x-small;
+    }
+
+    .fotter_comp:hover {
+        text-decoration-line: underline;
+    }
+}
+
+.shadow-card {
+    box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+}
+
+/* font-bold text-white text-opacity-90 cursor-pointer */
